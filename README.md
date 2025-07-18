@@ -2,7 +2,7 @@
 
 NovaMix es una tienda online con gran variedad de productos, incluyendo ropa, accesorios y tecnología. Está diseñada para ofrecer una experiencia de compra moderna, rápida y sencilla.
 
-🌐 Sitio en vivo: [novamix.netlify.app](https://novamix.netlify.app/)
+🌐 Pagina en vivo: [novamix.netlify.app](https://novamix.netlify.app/)
 
 ## Características principales
 
