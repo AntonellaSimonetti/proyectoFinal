@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tienda online">
+  <title>NovaMix</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>NovaMix</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#reseñas">Reseñas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#carrito">Carrito (<span id="contador">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio">
+      <h2>Bienvenido a NovaMix</h2>
+      <p>Comprá fácil, rápido y seguro. Todo lo que buscás, está en NovaMix</p>
+    </section>
+
+    <section id="productos">
+      <h2>Productos</h2>
+      <div class="productos-container"></div>
+    </section>
+
+    <section id="reseñas">
+        <h2>Reseñas de nuestros clientes</h2>
+        <div class="reseñas-grid">
+            <div class="reseña">
+            <img src="/clientes/hombre.png" alt="Cliente 1">
+            <p>Excelente servicio y productos de calidad.</p>
+            </div>
+            <div class="reseña">
+            <img src="/clientes/joven.png" alt="Cliente 2">
+            <p>Muy satisfecho con mi compra.</p>
+            </div>
+            <div class="reseña">
+            <img src="/clientes/mujer.png" alt="Cliente 3">
+            <p>Entrega rápida y atención personalizada.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="contacto">
+      <h2>Contactate con nosotros</h2>
+      <form action="https://formspree.io/f/xkgbnlok" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section id="carrito">
+      <h2>Carrito de Compras</h2>
+      <div id="carrito-items"></div>
+      <p>Total: $<span id="total">0.00</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mi Tienda Online</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
